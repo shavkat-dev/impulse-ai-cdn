@@ -725,3 +725,26 @@ h2 { font-size: 2rem; border-bottom: 2px solid var(--accent-color); padding-bott
 .tg-format .tg-spoiler:hover {
     color: var(--primary-text-color);
 }
+
+/* Новая сетка 2x3 для детального профиля */
+.chart-grid-3 {
+    display: grid;
+    /* Создаем 3 колонки одинаковой ширины */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Стили для плейсхолдеров будущих чартов */
+.chart-card.placeholder {
+    background-color: transparent;
+    border-style: dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chart-card.placeholder .placeholder-text {
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
